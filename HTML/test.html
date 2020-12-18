@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*   var dog = {
+           uname: 'keke',
+           type: 'alashijiaqvan',
+           age: 5,
+           color: 'brown',
+           ability: 'bark showFilm' 
+       }
+       console.log(dog.ability);
+       var person = new Object();
+       person.uname = '鸣人';
+       person.sex = '男';
+       person.age = 19;
+       person.skill = '影分身术';
+       console.log(person.skill);
+       console.log(person['uname']);*/
+       function Hero(uname,type,blood){
+            this.name = uname;
+            this.type = type;
+            this.blood = blood;
+            this.atk = function(attack){
+                console.log(attack);
+            } 
+       }
+       var lianpo = new Hero('lianpo','liliang',500);
+       var houyi = new Hero('houyi','sheshou',100);
+       console.log(lianpo.blood);
+       console.log(houyi.name);
+       lianpo.atk('jinzhan')
+       
+    </script>
+</body>
+</html>
