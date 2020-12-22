@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 800px;
+            margin: 100px auto;
+            text-align: center;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        thead tr{
+            height: 30px;
+            background-color: skyblue;
+        }
+        tbody tr{
+            height: 30px;
+        }
+        .bg {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>代码</th>
+                <th>最新公布精致</th>
+                <th>累计精致</th>
+                <th>代码</th>
+                <th>代码</th>
+            </tr>
+            <!-- <tr>名称</tr> -->
+            <!-- <tr>最新公布精致</tr> -->
+            <!-- <tr>累计精致</tr> -->
+            <!-- <tr>代码</tr> -->
+            <!-- <tr>代码</tr> -->
+        </thead>
+        <tbody>
+            <tr>
+                <td>2u2294</td>
+                <td>农银金税</td>
+                <td>122</td>
+                <td>2294</td>
+                <td>2294</td>
+            </tr>
+            <tr>
+                <td>2u2294</td>
+                <td>2u2294</td>
+                <td>2u2294</td>
+                <td>2u2294</td>
+                <td>2u2294</td>
+            </tr>
+            <tr>
+                <td>2u2294</td>
+                <td>2u2294</td>
+                <td>2u2294</td>
+                <td>2u2294</td>
+                <td>2u2294</td>
+            </tr>
+            <tr>
+                <td>2u2294</td>
+                <td>2u2294</td>
+                <td>2u2294</td>
+                <td>2u2294</td>
+                <td>2u2294</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        let trs = document.querySelector('tbody').querySelectorAll('tr');
+        for(let i = 0;i < trs.length;i++){
+            trs[i].onmouseover = function(){
+                this.className = 'bg';
+            }
+            trs[i].onmouseout = function(){
+                this.className = '';
+            }
+        }
+    </script>
+</body>
+</html>
