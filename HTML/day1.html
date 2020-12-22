@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button>显示当前系统时间</button>
+    <div>某个时间</div> -->
+    <button>按钮</button>
+    <input type="text" value="请输入内容">
+    <script>
+        // let sss = document.querySelector('button');
+        // let ss = document.querySelector('div')
+        // sss.onclick = function() {
+        //     // console.log('xuanzzhongle');
+        //     sss.innerText = '2020-12-21'
+        // }
+        let bin = document.querySelector('button')
+        let inp = document.querySelector('input')
+        bin.onclick = function() {
+            inp.value = '被惦记了'
+            // bin.disabled = true
+            this.disabled = true
+        } 
+    </script>
+</body>
+</html>
